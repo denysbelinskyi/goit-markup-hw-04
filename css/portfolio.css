@@ -44,6 +44,15 @@
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
   width: calc((100% - 48px) / 3);
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio .portfolioframe:hover {
+  box-shadow:
+    0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio .portfolioimage {
@@ -68,11 +77,11 @@
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 40px 32px 164px;
+  padding: 40px 32px;
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.box:hover .overlay {
+.portfolioframe:hover .overlay {
   transform: translateY(0%);
 }

@@ -45,6 +45,10 @@
   color: #404bbf;
 }
 
+.header .headbuttons.featuresbutton {
+  color: #404bbf;
+}
+
 .header .headbuttons.featuresbutton::after {
   content: "";
   position: absolute;
